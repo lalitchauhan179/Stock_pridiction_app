@@ -20,7 +20,7 @@ Clone this repository:
 
 
 Copy code
-git clone https://github.com/yourusername/stock-forecast-app.git
+git clone https://https://github.com/lalitchauhan179/Stock_pridiction_app.git
 
 Navigate to the project directory:
 
@@ -40,11 +40,16 @@ Data Loading: Historical stock data is fetched using yfinance and cached for per
 Data Visualization: Historical data and forecasted results are visualized using Plotly.
 Forecasting: The Prophet model is used to predict future stock prices based on historical data.
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgements
+
+# Acknowledgements
+
 Streamlit
+
 Prophet
-yfinance
+
+finance
+
 Plotly
-Feel free to customize this README further based on your specific needs or preferences.
+
+

@@ -1,4 +1,4 @@
-# pip install streamlit fbprophet yfinance plotly
+
 import streamlit as st
 from datetime import date
 
@@ -33,7 +33,7 @@ data_load_state.text('Loading data... done!')
 st.subheader('Raw data')
 st.write(data.tail())
 
-# Plot raw data
+
 def plot_raw_data():
 	fig = go.Figure()
 	fig.add_trace(go.Scatter(x=data['Date'], y=data['Open'], name="stock_open"))
@@ -43,7 +43,7 @@ def plot_raw_data():
 	
 plot_raw_data()
 
-# Predict forecast with Prophet.
+
 df_train = data[['Date','Close']]
 df_train = df_train.rename(columns={"Date": "ds", "Close": "y"})
 
@@ -52,7 +52,6 @@ m.fit(df_train)
 future = m.make_future_dataframe(periods=period)
 forecast = m.predict(future)
 
-# Show and plot forecast
 st.subheader('Forecast data')
 st.write(forecast.tail())
     
